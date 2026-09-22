@@ -1,0 +1,23 @@
+# Environment / secrets
+.env
+.env.*
+*.key
+serviceAccountKey.json
+firebase-adminsdk*.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Node / frontend
+node_modules/
+dist/
+.vite/
+
+# OS / editor
+.DS_Store
+.vscode/
+*.log

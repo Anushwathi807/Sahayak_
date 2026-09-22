@@ -1,5 +1,7 @@
-from fastapi import FastAPI
+from fastapi import Depends, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+
+from app.auth import verify_firebase_token
 
 app = FastAPI(title="Sahayak API")
 
@@ -14,3 +16,8 @@ app.add_middleware(
 @app.get("/health")
 def health():
     return {"status": "ok"}
+
+
+@app.get("/me")
+def me(claims: dict = Depends(verify_firebase_token)):
+    return {"uid": claims["user_id"], "email": claims.get("email")}

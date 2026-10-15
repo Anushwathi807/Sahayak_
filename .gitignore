@@ -23,3 +23,8 @@ dist/
 .DS_Store
 .vscode/
 *.log
+
+# Local AI-assistant project notes (not part of the project)
+.kiro/
+.claude/
+

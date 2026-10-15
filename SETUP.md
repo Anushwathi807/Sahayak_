@@ -19,6 +19,44 @@ These steps need your own accounts/browser login. I cannot do these for you.
 7. Copy `frontend/.env.example` to `frontend/.env` and fill in the 6 `VITE_FIREBASE_...` values from that config (skip `measurementId`, we don't use Analytics).
 8. Also add `FIREBASE_PROJECT_ID=<your-project-id>` to `backend/.env` — the backend needs it to verify login tokens.
 
+## 3. System packages (needed before `pip install`)
+
+PDF export (WeasyPrint) and SVG-to-PNG (CairoSVG) are Python wrappers around C
+libraries. `pip install` does **not** install those libraries, so on a fresh machine
+PDF download will fail with a confusing error unless you install them first.
+
+Ubuntu / Debian:
+```
+sudo apt install libpango-1.0-0 libpangoft2-1.0-0 libglib2.0-0 \
+                 libharfbuzz0b libfontconfig1 libcairo2 libgdk-pixbuf-2.0-0
+```
+
+(Verified against Ubuntu 22.04. On Fedora the equivalents are `pango`, `cairo`,
+`gdk-pixbuf2`, `harfbuzz`, `fontconfig`, `glib2`.)
+
+## Rebuilding the project from a fresh clone
+
+```
+git clone https://github.com/Anushwathi807/Sahayak_.git
+cd Sahayak_
+
+# backend
+cd backend
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt       # versions are pinned, so this is reproducible
+cd ..
+
+# frontend
+cd frontend
+npm ci                                # uses package-lock.json for an exact match
+cd ..
+```
+
+Then create `backend/.env` and `frontend/.env` from the two `.env.example` files
+(steps 1 and 2 above). These are deliberately **not** in the repository because they
+contain secret keys.
+
 ## Local run commands (once .env is filled in)
 
 Backend:

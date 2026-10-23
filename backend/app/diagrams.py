@@ -34,7 +34,7 @@ def _wrap_label(label: str, max_chars: int = 12) -> list[str]:
     return lines[:2]
 
 
-def _node_svg(x: float, y: float, label: str, icon: str | None, is_hidden: bool) -> str:
+def _node_svg(x: float, y: float, label: str, icon: str | None, is_hidden: bool, number: int) -> str:
     parts = [
         f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{_NODE_RADIUS + 3}" fill="white" opacity="0.9"/>',
         f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{_NODE_RADIUS}" '
@@ -45,7 +45,12 @@ def _node_svg(x: float, y: float, label: str, icon: str | None, is_hidden: bool)
             f'<text x="{x:.1f}" y="{y + 6:.1f}" text-anchor="middle" font-size="18" font-weight="bold">?</text>'
         )
     else:
-        parts.append(render_icon(icon, x, y))
+        # No matching icon: show the stage number, so the circle still points to its explanation.
+        parts.append(
+            render_icon(icon, x, y)
+            or f'<text x="{x:.1f}" y="{y + 7:.1f}" text-anchor="middle" font-size="20" font-weight="bold" '
+            f'fill="#3a3a3a">{number}</text>'
+        )
 
     if not is_hidden:
         lines = _wrap_label(label)
@@ -117,7 +122,7 @@ def render_cycle_diagram(stages: list[tuple[str, str]], hidden_index: int | None
 
     for i, (x, y) in enumerate(positions):
         label, icon = stages[i]
-        svg_parts.append(_node_svg(x, y, label, icon, i == hidden_index))
+        svg_parts.append(_node_svg(x, y, label, icon, i == hidden_index, i + 1))
 
     svg_parts.append("</svg>")
     return "".join(svg_parts)
@@ -152,7 +157,63 @@ def render_sequence_diagram(stages: list[tuple[str, str]], hidden_index: int | N
 
     for i, (x, y) in enumerate(positions):
         label, icon = stages[i]
-        svg_parts.append(_node_svg(x, y, label, icon, i == hidden_index))
+        svg_parts.append(_node_svg(x, y, label, icon, i == hidden_index, i + 1))
+
+    svg_parts.append("</svg>")
+    return "".join(svg_parts)
+
+
+def render_block_diagram(stages: list[tuple[str, str]], hidden_index: int | None) -> str:
+    """Draws a top-to-bottom block diagram: one numbered box per step (icon + label), joined by
+    downward arrows. For workflows and flowcharts, where boxes read more clearly than circles.
+    Built with code like the other diagrams, so boxes never overlap and arrows always connect."""
+    count = len(stages)
+    width = 320
+    box_w, box_h, gap, top = 240, 56, 30, 20
+    height = top * 2 + count * box_h + (count - 1) * gap
+    box_x = (width - box_w) / 2
+
+    svg_parts = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" '
+        f'width="280" height="{int(280 * height / width)}">',
+        _defs(),
+        _background(width, height),
+    ]
+
+    for i in range(count - 1):
+        y1 = top + (i + 1) * box_h + i * gap
+        svg_parts.append(
+            f'<path d="M{width / 2:.1f},{y1 + 2:.1f} L{width / 2:.1f},{y1 + gap - 4:.1f}" '
+            f'fill="none" stroke="#3a3a3a" stroke-width="2" marker-end="url(#arrow)"/>'
+        )
+
+    for i, (label, icon) in enumerate(stages):
+        y = top + i * (box_h + gap)
+        cy = y + box_h / 2
+        hidden = i == hidden_index
+        svg_parts.append(
+            f'<rect x="{box_x:.1f}" y="{y:.1f}" width="{box_w}" height="{box_h}" rx="6" '
+            f'fill="{"#FFF3C4" if hidden else "#FFFFFF"}" stroke="#3a3a3a" stroke-width="1.5"/>'
+            f'<text x="{box_x + 14:.1f}" y="{cy + 5:.1f}" font-size="14" font-weight="bold" '
+            f'fill="#3a3a3a">{i + 1}</text>'
+        )
+        if hidden:
+            svg_parts.append(
+                f'<text x="{width / 2:.1f}" y="{cy + 6:.1f}" text-anchor="middle" '
+                f'font-size="18" font-weight="bold">?</text>'
+            )
+            continue
+        icon_svg = render_icon(icon, box_x + 52, cy)
+        svg_parts.append(icon_svg)
+        text_x = box_x + (82 if icon_svg else 38)
+        lines = _wrap_label(label, max_chars=18)
+        line_height = 15
+        start_y = cy - (len(lines) - 1) * line_height / 2 + 5
+        for li, line in enumerate(lines):
+            svg_parts.append(
+                f'<text x="{text_x:.1f}" y="{start_y + li * line_height:.1f}" font-size="13" '
+                f'font-weight="600" fill="#2b2b2b">{escape(line)}</text>'
+            )
 
     svg_parts.append("</svg>")
     return "".join(svg_parts)

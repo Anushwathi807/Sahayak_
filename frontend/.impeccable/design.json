@@ -1,0 +1,884 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-20T15:21:14+00:00",
+  "title": "Design System: Sahayak",
+  "extensions": {
+    "colorMeta": {
+      "ground": {
+        "role": "neutral",
+        "displayName": "Card-Stock Ground",
+        "canonical": "#f4f6f2",
+        "oklch": "oklch(97.1% 0.006 128.5)",
+        "tonalRamp": [
+          "#0a0c09",
+          "#242623",
+          "#41433f",
+          "#60625e",
+          "#81837f",
+          "#a4a6a2",
+          "#c8cac6",
+          "#edefeb"
+        ]
+      },
+      "sheet": {
+        "role": "neutral",
+        "displayName": "Report Sheet White",
+        "canonical": "#ffffff",
+        "oklch": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "rail": {
+        "role": "neutral",
+        "displayName": "Rail Paper",
+        "canonical": "#fafbf8",
+        "oklch": "oklch(98.6% 0.004 121.6)",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#252523",
+          "#414240",
+          "#61625f",
+          "#828380",
+          "#a4a5a3",
+          "#c8c9c7",
+          "#eeefec"
+        ]
+      },
+      "tray": {
+        "role": "neutral",
+        "displayName": "Tray Grey",
+        "canonical": "#e4e8e3",
+        "oklch": "oklch(92.7% 0.008 139.4)",
+        "tonalRamp": [
+          "#090c09",
+          "#232622",
+          "#40433f",
+          "#5f625e",
+          "#80837f",
+          "#a2a6a2",
+          "#c6cac6",
+          "#ecf0eb"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Blue-Black Ink",
+        "canonical": "#17233a",
+        "oklch": "oklch(25.8% 0.047 262.6)",
+        "tonalRamp": [
+          "#030a1f",
+          "#19253c",
+          "#35425b",
+          "#53627c",
+          "#73839f",
+          "#96a6c3",
+          "#b9cae8",
+          "#e6efff"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Slate Secondary Ink",
+        "canonical": "#4f5b6b",
+        "oklch": "oklch(46.7% 0.030 255.7)",
+        "tonalRamp": [
+          "#040b18",
+          "#1b2634",
+          "#374352",
+          "#566272",
+          "#778495",
+          "#99a6b8",
+          "#bdcadd",
+          "#e4f0ff"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Faded Pencil Grey",
+        "canonical": "#5f6a78",
+        "oklch": "oklch(56.2% 0.025 254.5)",
+        "tonalRamp": [
+          "#050c16",
+          "#1d2631",
+          "#394350",
+          "#586270",
+          "#788392",
+          "#9ba6b5",
+          "#becada",
+          "#e4f0ff"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Hairline Rule Grey",
+        "canonical": "#c9d0cc",
+        "oklch": "oklch(85.1% 0.009 161.3)",
+        "tonalRamp": [
+          "#080c0a",
+          "#212724",
+          "#3e4440",
+          "#5d635f",
+          "#7e8480",
+          "#a0a7a3",
+          "#c4cbc7",
+          "#e9f0ec"
+        ]
+      },
+      "field": {
+        "role": "neutral",
+        "displayName": "Field Stroke Grey",
+        "canonical": "#858f8a",
+        "oklch": "oklch(66.9% 0.015 167.0)",
+        "tonalRamp": [
+          "#060d0a",
+          "#1e2723",
+          "#3b4540",
+          "#5a645f",
+          "#7a8580",
+          "#9da8a3",
+          "#c1ccc7",
+          "#e6f2ec"
+        ]
+      },
+      "brand": {
+        "role": "primary",
+        "displayName": "Register Green",
+        "canonical": "#0f5a47",
+        "oklch": "oklch(41.9% 0.077 170.9)",
+        "tonalRamp": [
+          "#000f09",
+          "#002d22",
+          "#004e3c",
+          "#2b6f5b",
+          "#4e917c",
+          "#72b59e",
+          "#96dac2",
+          "#beffe8"
+        ]
+      },
+      "brand-deep": {
+        "role": "primary",
+        "displayName": "Deep Register Green",
+        "canonical": "#0b4a3a",
+        "oklch": "oklch(36.7% 0.067 170.9)",
+        "tonalRamp": [
+          "#000f09",
+          "#002d22",
+          "#104d3d",
+          "#356e5c",
+          "#57907d",
+          "#7ab39f",
+          "#9dd8c3",
+          "#c2fee8"
+        ]
+      },
+      "brand-2": {
+        "role": "primary",
+        "displayName": "Slate Teal",
+        "canonical": "#16637f",
+        "oklch": "oklch(46.8% 0.083 228.0)",
+        "tonalRamp": [
+          "#000d15",
+          "#002a39",
+          "#004961",
+          "#206a86",
+          "#468caa",
+          "#6ab0ce",
+          "#8ed4f4",
+          "#daf3ff"
+        ]
+      },
+      "brand-tint": {
+        "role": "primary",
+        "displayName": "Pale Sage Tint",
+        "canonical": "#e3eee8",
+        "oklch": "oklch(93.9% 0.014 162.5)",
+        "tonalRamp": [
+          "#060d09",
+          "#1f2723",
+          "#3c4440",
+          "#5a645f",
+          "#7b8580",
+          "#9ea8a2",
+          "#c1ccc6",
+          "#e7f2ec"
+        ]
+      },
+      "on-brand-muted": {
+        "role": "primary",
+        "displayName": "Masthead Mist",
+        "canonical": "#d7eae4",
+        "oklch": "oklch(92.1% 0.022 175.0)",
+        "tonalRamp": [
+          "#020e0b",
+          "#1a2924",
+          "#364641",
+          "#556560",
+          "#758781",
+          "#98aaa4",
+          "#bbcec8",
+          "#e0f4ee"
+        ]
+      },
+      "entry": {
+        "role": "secondary",
+        "displayName": "Fountain-Pen Blue",
+        "canonical": "#2350a8",
+        "oklch": "oklch(45.3% 0.150 262.0)",
+        "tonalRamp": [
+          "#000729",
+          "#001d5f",
+          "#0e3a90",
+          "#2e5cb5",
+          "#4e7fdb",
+          "#72a3ff",
+          "#accaff",
+          "#e6efff"
+        ]
+      },
+      "attention": {
+        "role": "tertiary",
+        "displayName": "Red Ink",
+        "canonical": "#b3312a",
+        "oklch": "oklch(51.2% 0.168 27.8)",
+        "tonalRamp": [
+          "#1f0000",
+          "#4d0002",
+          "#810006",
+          "#ac2a24",
+          "#d45146",
+          "#fd7568",
+          "#ffb3a8",
+          "#ffe9e5"
+        ]
+      },
+      "attention-tint": {
+        "role": "tertiary",
+        "displayName": "Red Ink Wash",
+        "canonical": "#f8e4e1",
+        "oklch": "oklch(93.4% 0.022 27.8)",
+        "tonalRamp": [
+          "#130806",
+          "#2f211f",
+          "#4d3e3b",
+          "#6e5d5a",
+          "#8f7e7b",
+          "#b3a09d",
+          "#d7c4c1",
+          "#fde9e6"
+        ]
+      },
+      "caution": {
+        "role": "state",
+        "displayName": "Caution Ochre",
+        "canonical": "#7a4f00",
+        "oklch": "oklch(46.4% 0.099 73.2)",
+        "tonalRamp": [
+          "#130900",
+          "#352000",
+          "#5b3a00",
+          "#83570f",
+          "#a67838",
+          "#cb9b5c",
+          "#f0bf7f",
+          "#ffebd2"
+        ]
+      },
+      "caution-tint": {
+        "role": "state",
+        "displayName": "Caution Cream",
+        "canonical": "#fdf1d8",
+        "oklch": "oklch(96.1% 0.035 85.4)",
+        "tonalRamp": [
+          "#110a00",
+          "#2d2410",
+          "#4b412c",
+          "#6a604a",
+          "#8c816b",
+          "#afa48c",
+          "#d4c8b0",
+          "#f9edd4"
+        ]
+      },
+      "success": {
+        "role": "state",
+        "displayName": "Pass Green",
+        "canonical": "#1e6b45",
+        "oklch": "oklch(47.1% 0.097 157.4)",
+        "tonalRamp": [
+          "#001006",
+          "#002e18",
+          "#00502e",
+          "#26714b",
+          "#4b946b",
+          "#6eb88d",
+          "#92ddb1",
+          "#c4ffda"
+        ]
+      },
+      "success-tint": {
+        "role": "state",
+        "displayName": "Pass Green Wash",
+        "canonical": "#e2f0e7",
+        "oklch": "oklch(94.2% 0.019 157.9)",
+        "tonalRamp": [
+          "#050e08",
+          "#1d2821",
+          "#3a453e",
+          "#59655d",
+          "#79867e",
+          "#9ca9a0",
+          "#bfcdc4",
+          "#e5f3ea"
+        ]
+      },
+      "band-a1": {
+        "role": "data",
+        "displayName": "Band A1 Forest",
+        "canonical": "#135a3a",
+        "oklch": "oklch(41.6% 0.087 158.7)",
+        "tonalRamp": [
+          "#000f06",
+          "#002e1a",
+          "#014f30",
+          "#2e704f",
+          "#51926f",
+          "#74b691",
+          "#98dbb4",
+          "#c3ffdc"
+        ]
+      },
+      "band-a2": {
+        "role": "data",
+        "displayName": "Band A2 Green",
+        "canonical": "#2a7f4c",
+        "oklch": "oklch(53.2% 0.114 153.4)",
+        "tonalRamp": [
+          "#001004",
+          "#002e14",
+          "#005028",
+          "#1b7341",
+          "#439661",
+          "#68ba83",
+          "#8cdfa6",
+          "#c6ffd6"
+        ]
+      },
+      "band-b1": {
+        "role": "data",
+        "displayName": "Band B1 Leaf",
+        "canonical": "#7faf3e",
+        "oklch": "oklch(69.7% 0.152 129.3)",
+        "tonalRamp": [
+          "#060e00",
+          "#1a2b00",
+          "#304c00",
+          "#496f00",
+          "#65931a",
+          "#86b747",
+          "#aadc6c",
+          "#d5ffa7"
+        ]
+      },
+      "band-b2": {
+        "role": "data",
+        "displayName": "Band B2 Mustard",
+        "canonical": "#c9b23c",
+        "oklch": "oklch(76.2% 0.136 98.0)",
+        "tonalRamp": [
+          "#0f0b00",
+          "#2c2500",
+          "#4d4200",
+          "#716100",
+          "#978200",
+          "#bca52b",
+          "#e1ca57",
+          "#fff0a6"
+        ]
+      },
+      "band-c1": {
+        "role": "data",
+        "displayName": "Band C1 Marigold",
+        "canonical": "#e7a93a",
+        "oklch": "oklch(77.5% 0.142 77.8)",
+        "tonalRamp": [
+          "#130900",
+          "#342100",
+          "#593c00",
+          "#815800",
+          "#ab7700",
+          "#d59822",
+          "#fcbd51",
+          "#ffeccf"
+        ]
+      },
+      "band-c2": {
+        "role": "data",
+        "displayName": "Band C2 Saffron",
+        "canonical": "#e58a3e",
+        "oklch": "oklch(71.7% 0.142 57.2)",
+        "tonalRamp": [
+          "#170700",
+          "#3c1b00",
+          "#653300",
+          "#924c00",
+          "#c0680e",
+          "#e78c40",
+          "#ffb782",
+          "#ffeadb"
+        ]
+      },
+      "band-d": {
+        "role": "data",
+        "displayName": "Band D Brick",
+        "canonical": "#b8432a",
+        "oklch": "oklch(54.1% 0.157 33.7)",
+        "tonalRamp": [
+          "#1e0100",
+          "#490900",
+          "#7a1700",
+          "#a7331a",
+          "#cf583e",
+          "#f77c61",
+          "#ffb4a2",
+          "#ffe9e4"
+        ]
+      },
+      "band-e": {
+        "role": "data",
+        "displayName": "Band E Oxblood",
+        "canonical": "#8e2620",
+        "oklch": "oklch(43.3% 0.140 27.9)",
+        "tonalRamp": [
+          "#1f0000",
+          "#4d0002",
+          "#7c1210",
+          "#a23931",
+          "#c95c51",
+          "#f08073",
+          "#ffb3a8",
+          "#ffe9e5"
+        ]
+      },
+      "subject-1": {
+        "role": "data",
+        "displayName": "Science Blue",
+        "canonical": "#2b5fae",
+        "oklch": "oklch(49.3% 0.138 258.7)",
+        "tonalRamp": [
+          "#000924",
+          "#002155",
+          "#063d89",
+          "#2b5fae",
+          "#4c82d4",
+          "#6ea5fb",
+          "#a9cbff",
+          "#e5efff"
+        ]
+      },
+      "subject-2": {
+        "role": "data",
+        "displayName": "Maths Violet",
+        "canonical": "#7a3d9c",
+        "oklch": "oklch(48.1% 0.155 311.6)",
+        "tonalRamp": [
+          "#150022",
+          "#390052",
+          "#5c1d7c",
+          "#7e41a0",
+          "#a163c5",
+          "#c586eb",
+          "#e1b4ff",
+          "#f6e9ff"
+        ]
+      },
+      "subject-3": {
+        "role": "data",
+        "displayName": "Hindi Ochre",
+        "canonical": "#a55a16",
+        "oklch": "oklch(54.5% 0.124 56.3)",
+        "tonalRamp": [
+          "#170600",
+          "#3c1b00",
+          "#663200",
+          "#934b00",
+          "#b96c2e",
+          "#df8f53",
+          "#ffb783",
+          "#ffeadc"
+        ]
+      },
+      "subject-4": {
+        "role": "data",
+        "displayName": "EVS Green",
+        "canonical": "#2e7d4f",
+        "oklch": "oklch(52.9% 0.106 154.6)",
+        "tonalRamp": [
+          "#001005",
+          "#002e16",
+          "#00502a",
+          "#217245",
+          "#489565",
+          "#6cb987",
+          "#90deaa",
+          "#c5ffd7"
+        ]
+      },
+      "subject-5": {
+        "role": "data",
+        "displayName": "Marathi Rose",
+        "canonical": "#b0304e",
+        "oklch": "oklch(51.3% 0.164 11.6)",
+        "tonalRamp": [
+          "#1e0005",
+          "#4c0017",
+          "#7e002c",
+          "#a92949",
+          "#d14f69",
+          "#f9748a",
+          "#ffb0ba",
+          "#ffe8ea"
+        ]
+      },
+      "subject-6": {
+        "role": "data",
+        "displayName": "English Teal",
+        "canonical": "#0e7383",
+        "oklch": "oklch(51.1% 0.086 212.1)",
+        "tonalRamp": [
+          "#000e12",
+          "#002b32",
+          "#004b56",
+          "#006e7e",
+          "#3890a0",
+          "#5eb4c4",
+          "#83d8ea",
+          "#d0f7ff"
+        ]
+      },
+      "subject-7": {
+        "role": "data",
+        "displayName": "Tamil Umber",
+        "canonical": "#6b4f2a",
+        "oklch": "oklch(44.9% 0.065 72.6)",
+        "tonalRamp": [
+          "#140800",
+          "#362000",
+          "#573c16",
+          "#785b36",
+          "#9a7c57",
+          "#be9f78",
+          "#e4c39b",
+          "#ffebd3"
+        ]
+      },
+      "subject-8": {
+        "role": "data",
+        "displayName": "Social Science Slate",
+        "canonical": "#4a5a7a",
+        "oklch": "oklch(46.8% 0.056 263.8)",
+        "tonalRamp": [
+          "#020922",
+          "#172440",
+          "#334260",
+          "#516182",
+          "#7182a5",
+          "#93a5c9",
+          "#b7caef",
+          "#e6efff"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The landing headline only; steps down to 2.375rem on 2.75rem below 640px."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "One page title per route in the page header; landing section titles, At a glance and login titles."
+      },
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "The Sahayak name in the masthead and the mobile drawer header."
+      },
+      "subhead": {
+        "displayName": "Subhead",
+        "purpose": "Headings inside generated results, landing step names, scanned-page subject."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Sheet titles and dialog section headings."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default text, table cells, inputs, nav items, page-header descriptions."
+      },
+      "body-long": {
+        "displayName": "Body Long",
+        "purpose": "Generated stories and explanations and the landing lede, at a 58-70ch measure."
+      },
+      "body-small": {
+        "displayName": "Body Small",
+        "purpose": "Descriptions, hints, notices and secondary lines; the most-used size."
+      },
+      "action": {
+        "displayName": "Action",
+        "purpose": "Text on standard (44px) buttons."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Form labels and legends, small buttons and toggles."
+      },
+      "label-caps": {
+        "displayName": "Label Caps",
+        "purpose": "Uppercase table column headers and definition terms; nav group labels use 700 weight and 0.08em."
+      }
+    },
+    "shadows": [
+      {
+        "name": "modal",
+        "value": "0 24px 48px -16px rgba(23,35,58,0.4)",
+        "purpose": "The At a glance dialog; the only modal surface."
+      },
+      {
+        "name": "popover",
+        "value": "0 12px 32px -12px rgba(23,35,58,0.35)",
+        "purpose": "The account menu under the masthead."
+      },
+      {
+        "name": "paper",
+        "value": "0 8px 24px -12px rgba(23,35,58,0.35)",
+        "purpose": "The worksheet page on its preview tray; removed in print."
+      },
+      {
+        "name": "scrim-dialog",
+        "value": "rgb(23 35 58 / 0.55)",
+        "purpose": "Solid dialog backdrop; never blurred."
+      },
+      {
+        "name": "scrim-drawer",
+        "value": "rgb(23 35 58 / 0.5)",
+        "purpose": "Solid scrim behind the mobile navigation drawer."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-standard",
+        "value": "150ms cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "Colour and border transitions on buttons, fields, toggles and nav items. No transforms on hover."
+      },
+      {
+        "name": "sheet-rise",
+        "value": "220ms cubic-bezier(0.16, 1, 0.3, 1); opacity 0 to 1, translateY 12px to 0",
+        "purpose": "The one authored motion: the At a glance dialog and the mobile drawer rising into place."
+      },
+      {
+        "name": "skeleton-pulse",
+        "value": "1.4s ease-in-out infinite; opacity to 0.55 at 50%",
+        "purpose": "Tray-grey skeleton bars while data loads."
+      },
+      {
+        "name": "spin",
+        "value": "1s linear infinite",
+        "purpose": "Progress icon inside loading buttons and the working line."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation and transition durations 0.01ms",
+        "purpose": "All motion collapses under prefers-reduced-motion: reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      },
+      {
+        "name": "xl",
+        "value": "1280px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one filled action per view: Ask Sahayak, Close and continue, Worksheet PDF.",
+      "html": "<button class=\"ds-btn-primary\"><svg class=\"ds-icon\" viewBox=\"0 -960 960 960\" aria-hidden=\"true\" width=\"20\" height=\"20\"><path d=\"M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Z\"/></svg>Ask Sahayak</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 44px; padding: 0 20px; border: 0; border-radius: 4px; background: var(--color-brand); color: #fff; font-family: var(--font-sans); font-size: 1rem; line-height: 1.625rem; font-weight: 600; white-space: nowrap; cursor: pointer; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-btn-primary .ds-icon { fill: currentColor; flex-shrink: 0; } .ds-btn-primary:hover { background: var(--color-brand-deep); } .ds-btn-primary:focus-visible { outline: 2px solid var(--color-brand-2); outline-offset: 2px; } .ds-btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "White with a 1px ink stroke; every non-primary action (Refresh, Change the question mix).",
+      "html": "<button class=\"ds-btn-secondary\">Change the question mix</button>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 44px; padding: 0 20px; border: 1px solid var(--color-ink); border-radius: 4px; background: var(--color-sheet); color: var(--color-ink); font-family: var(--font-sans); font-size: 1rem; line-height: 1.625rem; font-weight: 600; white-space: nowrap; cursor: pointer; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-btn-secondary:hover { background: var(--color-ground); } .ds-btn-secondary:focus-visible { outline: 2px solid var(--color-brand-2); outline-offset: 2px; }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Label above, 44px control with a field-grey stroke, hint below; focus turns the stroke slate teal.",
+      "html": "<div class=\"ds-field\"><label class=\"ds-field-label\" for=\"ds-request\">Your request</label><input id=\"ds-request\" class=\"ds-input\" placeholder=\"For example: the water cycle for grades 3 and 4\"><p class=\"ds-field-hint\">Sahayak answers in the language you choose.</p></div>",
+      "css": ".ds-field { display: flex; flex-direction: column; gap: 6px; max-width: 420px; font-family: var(--font-sans); } .ds-field-label { font-size: 0.875rem; line-height: 1.375rem; font-weight: 600; color: var(--color-ink); } .ds-input { height: 44px; width: 100%; padding: 0 12px; border: 1px solid var(--color-field); border-radius: 4px; background: var(--color-sheet); color: var(--color-ink); font-family: var(--font-sans); font-size: 1rem; transition: border-color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-input::placeholder { color: var(--color-ink-3); } .ds-input:focus { border-color: var(--color-brand-2); } .ds-input:focus-visible { outline: 2px solid var(--color-brand-2); outline-offset: 2px; } .ds-input[aria-invalid=true] { border-color: var(--color-attention); } .ds-field-hint { margin: 0; font-size: 0.875rem; line-height: 1.375rem; color: var(--color-ink-2); }"
+    },
+    {
+      "name": "Grade Toggles",
+      "kind": "chip",
+      "refersTo": "grade-toggle",
+      "description": "Multi-select grade chips; selected ones turn register green and gain a check mark.",
+      "html": "<fieldset class=\"ds-grades\"><legend>Grades</legend><div class=\"ds-grades-row\"><button class=\"ds-grade\" aria-pressed=\"true\"><svg class=\"ds-icon\" viewBox=\"0 -960 960 960\" aria-hidden=\"true\" width=\"16\" height=\"16\"><path d=\"M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z\"/></svg>Grade 3</button><button class=\"ds-grade\" aria-pressed=\"true\"><svg class=\"ds-icon\" viewBox=\"0 -960 960 960\" aria-hidden=\"true\" width=\"16\" height=\"16\"><path d=\"M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z\"/></svg>Grade 4</button><button class=\"ds-grade\" aria-pressed=\"false\">Grade 5</button></div></fieldset>",
+      "css": ".ds-grades { border: 0; margin: 0; padding: 0; font-family: var(--font-sans); } .ds-grades legend { margin-bottom: 8px; font-size: 0.875rem; font-weight: 600; color: var(--color-ink); } .ds-grades-row { display: flex; flex-wrap: wrap; gap: 8px; } .ds-grade { display: inline-flex; align-items: center; gap: 6px; height: 40px; padding: 0 12px; border: 1px solid var(--color-field); border-radius: 4px; background: var(--color-sheet); color: var(--color-ink); font-family: var(--font-sans); font-size: 0.875rem; font-weight: 600; cursor: pointer; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1), border-color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-grade .ds-icon { fill: currentColor; } .ds-grade:hover { border-color: var(--color-ink); } .ds-grade[aria-pressed=true] { border-color: var(--color-brand); background: var(--color-brand); color: #fff; } .ds-grade:focus-visible { outline: 2px solid var(--color-brand-2); outline-offset: 2px; }"
+    },
+    {
+      "name": "Band Chips and Strip",
+      "kind": "custom",
+      "refersTo": "band-chip-a1",
+      "description": "The CBSE eight-band scale: chips beside every score, and the strip that lays the class out with counts as text.",
+      "html": "<div class=\"ds-bands\"><div class=\"ds-chip-row\"><span class=\"ds-band\" style=\"background: var(--color-band-a1); color: #fff\">A1</span><span class=\"ds-band\" style=\"background: var(--color-band-a2); color: #fff\">A2</span><span class=\"ds-band\" style=\"background: var(--color-band-b1)\">B1</span><span class=\"ds-band\" style=\"background: var(--color-band-b2)\">B2</span><span class=\"ds-band\" style=\"background: var(--color-band-c1)\">C1</span><span class=\"ds-band\" style=\"background: var(--color-band-c2)\">C2</span><span class=\"ds-band\" style=\"background: var(--color-band-d); color: #fff\">D</span><span class=\"ds-band\" style=\"background: var(--color-band-e); color: #fff\">E</span></div><div class=\"ds-strip\" role=\"img\" aria-label=\"Students per grade band: A1 1, A2 1, B1 1, B2 1, C1 1, C2 0, D 0, E 3\"><span style=\"flex: 1; background: var(--color-band-a1)\"></span><span style=\"flex: 1; background: var(--color-band-a2)\"></span><span style=\"flex: 1; background: var(--color-band-b1)\"></span><span style=\"flex: 1; background: var(--color-band-b2)\"></span><span style=\"flex: 1; background: var(--color-band-c1)\"></span><span style=\"flex: 3; background: var(--color-band-e)\"></span></div><dl class=\"ds-strip-legend\"><div><dt>A1</dt><dd>1</dd></div><div><dt>A2</dt><dd>1</dd></div><div><dt>B1</dt><dd>1</dd></div><div><dt>B2</dt><dd>1</dd></div><div><dt>C1</dt><dd>1</dd></div><div><dt>C2</dt><dd>0</dd></div><div><dt>D</dt><dd>0</dd></div><div><dt>E</dt><dd>3</dd></div></dl></div>",
+      "css": ".ds-bands { display: flex; flex-direction: column; gap: 16px; max-width: 560px; font-family: var(--font-sans); color: var(--color-ink); } .ds-chip-row { display: flex; flex-wrap: wrap; gap: 6px; } .ds-band { display: inline-flex; min-width: 40px; align-items: center; justify-content: center; padding: 2px 6px; border-radius: 4px; color: var(--color-ink); font-family: var(--font-display); font-size: 0.8125rem; line-height: 1.25rem; font-weight: 700; letter-spacing: 0.025em; } .ds-strip { display: flex; height: 20px; overflow: hidden; border: 1px solid var(--color-ink); border-radius: 4px; background: var(--color-ground); } .ds-strip-legend { display: grid; grid-template-columns: repeat(8, 1fr); margin: 6px 0 0; text-align: center; } .ds-strip-legend dt { font-family: var(--font-display); font-size: 0.8125rem; font-weight: 700; color: var(--color-ink-2); } .ds-strip-legend dd { margin: 0; font-size: 0.875rem; font-variant-numeric: tabular-nums; }"
+    },
+    {
+      "name": "Sheet",
+      "kind": "card",
+      "refersTo": "sheet",
+      "description": "The base container: a flat white sheet with a hairline edge and its title on an ink rule.",
+      "html": "<section class=\"ds-sheet\"><div class=\"ds-sheet-head\"><h2>Grade bands</h2><p>8 of 9 students have marks.</p></div><div class=\"ds-sheet-body\"><p>Class average <span class=\"ds-entry\">57%</span>. Enter quiz marks and each student lands in a band from A1 to E.</p></div></section>",
+      "css": ".ds-sheet { max-width: 560px; border: 1px solid var(--color-rule); border-radius: 6px; background: var(--color-sheet); color: var(--color-ink); font-family: var(--font-sans); } .ds-sheet-head { padding: 14px 20px; border-bottom: 1px solid var(--color-ink); } .ds-sheet-head h2 { margin: 0; font-family: var(--font-display); font-size: 1.125rem; line-height: 1.625rem; font-weight: 600; } .ds-sheet-head p { margin: 0; font-size: 0.875rem; line-height: 1.375rem; color: var(--color-ink-2); } .ds-sheet-body { padding: 20px; font-size: 1rem; line-height: 1.625rem; } .ds-sheet-body p { margin: 0; } .ds-entry { color: var(--color-entry); font-weight: 600; font-variant-numeric: tabular-nums; }"
+    },
+    {
+      "name": "Progress Table",
+      "kind": "custom",
+      "refersTo": "band-chip-e",
+      "description": "The register: caps column heads on an ink rule, blue averages, red underlined below 33%, band chip last, weakest first.",
+      "html": "<table class=\"ds-register\"><thead><tr><th>Student</th><th>Grade</th><th class=\"ds-num\">Average</th><th>Band</th></tr></thead><tbody><tr><td class=\"ds-name\">Rohan More</td><td class=\"ds-num-cell\">2</td><td class=\"ds-num ds-low\">20%</td><td><span class=\"ds-chip\" style=\"background: var(--color-band-e); color: #fff\">E</span></td></tr><tr><td class=\"ds-name\">Kavya Nair</td><td class=\"ds-num-cell\">4</td><td class=\"ds-num ds-avg\">55%</td><td><span class=\"ds-chip\" style=\"background: var(--color-band-c1)\">C1</span></td></tr><tr><td class=\"ds-name\">Asha Patil</td><td class=\"ds-num-cell\">3</td><td class=\"ds-num ds-avg\">93%</td><td><span class=\"ds-chip\" style=\"background: var(--color-band-a1); color: #fff\">A1</span></td></tr></tbody></table>",
+      "css": ".ds-register { width: 100%; max-width: 560px; border-collapse: collapse; text-align: left; font-family: var(--font-sans); font-size: 1rem; color: var(--color-ink); } .ds-register thead tr { border-bottom: 1px solid var(--color-ink); } .ds-register th { padding: 8px 12px 8px 0; font-family: var(--font-display); font-size: 0.8125rem; line-height: 1.25rem; font-weight: 600; letter-spacing: 0.025em; text-transform: uppercase; } .ds-register tbody tr { border-bottom: 1px solid var(--color-rule); } .ds-register td { padding: 10px 12px 10px 0; } .ds-name { font-weight: 500; } .ds-num-cell { font-variant-numeric: tabular-nums; } .ds-num { text-align: right; font-variant-numeric: tabular-nums; } td.ds-num { font-weight: 600; } .ds-avg { color: var(--color-entry); } .ds-low { color: var(--color-attention); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; } .ds-chip { display: inline-flex; min-width: 40px; justify-content: center; padding: 2px 6px; border-radius: 4px; color: var(--color-ink); font-family: var(--font-display); font-size: 0.8125rem; font-weight: 700; letter-spacing: 0.025em; }"
+    },
+    {
+      "name": "Masthead",
+      "kind": "nav",
+      "refersTo": "masthead",
+      "description": "The one gradient: a 64px letterhead bar with the wordmark, date, an outline action, the language select and the account initial.",
+      "html": "<header class=\"ds-masthead\"><span class=\"ds-wordmark\">Sahayak</span><span class=\"ds-date\">Tuesday, 20 October</span><span class=\"ds-masthead-end\"><button class=\"ds-btn-outline-brand\">At a glance</button><span class=\"ds-lang\">English<svg class=\"ds-icon\" viewBox=\"0 -960 960 960\" aria-hidden=\"true\" width=\"18\" height=\"18\"><path d=\"M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z\"/></svg></span><span class=\"ds-avatar\">A</span></span></header>",
+      "css": ".ds-masthead { display: flex; align-items: center; gap: 12px; height: 64px; padding: 0 20px; background-image: linear-gradient(90deg, var(--color-brand) 0%, var(--color-brand-2) 100%); color: #fff; font-family: var(--font-sans); } .ds-wordmark { font-family: var(--font-display); font-size: 1.5625rem; line-height: 2rem; font-weight: 700; letter-spacing: -0.025em; } .ds-date { margin-left: 12px; font-size: 0.875rem; color: var(--color-on-brand-muted); } .ds-masthead-end { margin-left: auto; display: flex; align-items: center; gap: 12px; } .ds-btn-outline-brand { height: 36px; padding: 0 14px; border: 1px solid #fff; border-radius: 4px; background: transparent; color: #fff; font-family: var(--font-sans); font-size: 0.875rem; font-weight: 600; cursor: pointer; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-btn-outline-brand:hover { background: var(--color-brand-deep); } .ds-btn-outline-brand:focus-visible { outline: 2px solid var(--color-brand-2); outline-offset: 2px; } .ds-lang { display: inline-flex; align-items: center; gap: 16px; height: 36px; padding: 0 8px 0 12px; border: 1px solid #fff; border-radius: 4px; font-size: 0.875rem; font-weight: 600; } .ds-lang .ds-icon { fill: currentColor; } .ds-avatar { display: flex; width: 32px; height: 32px; align-items: center; justify-content: center; border-radius: 9999px; background: #fff; color: var(--color-brand); font-family: var(--font-display); font-size: 0.875rem; font-weight: 700; }"
+    },
+    {
+      "name": "Side Rail",
+      "kind": "nav",
+      "refersTo": "nav-item-active",
+      "description": "The one left rail: caps group labels, 40px items, sage tint and a filled green icon on the active page.",
+      "html": "<nav class=\"ds-rail\" aria-label=\"Main\"><p class=\"ds-rail-group\">Overview</p><a class=\"ds-rail-item\" aria-current=\"page\" href=\"#\"><svg class=\"ds-icon\" viewBox=\"0 -960 960 960\" aria-hidden=\"true\" width=\"20\" height=\"20\"><path d=\"M160-120v-480l320-240 320 240v480H560v-280H400v280H160Z\"/></svg>Home</a><a class=\"ds-rail-item\" href=\"#\"><svg class=\"ds-icon\" viewBox=\"0 -960 960 960\" aria-hidden=\"true\" width=\"20\" height=\"20\"><path d=\"M640-160v-280h160v280H640Zm-240 0v-640h160v640H400Zm-240 0v-400h160v400H160Z\"/></svg>Analytics</a><p class=\"ds-rail-group\">Assess</p><a class=\"ds-rail-item\" href=\"#\"><svg class=\"ds-icon\" viewBox=\"0 -960 960 960\" aria-hidden=\"true\" width=\"20\" height=\"20\"><path d=\"M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm80-80h280v-80H280v80Zm0-160h400v-80H280v80Zm0-160h400v-80H280v80Z\"/></svg>Worksheets</a></nav>",
+      "css": ".ds-rail { display: flex; flex-direction: column; gap: 2px; width: 256px; padding: 8px; background: var(--color-rail); border-right: 1px solid var(--color-rule); font-family: var(--font-sans); } .ds-rail-group { margin: 0; padding: 12px 8px 6px; font-family: var(--font-display); font-size: 0.8125rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-ink-2); } .ds-rail-item { display: flex; align-items: center; gap: 12px; height: 40px; padding: 0 12px; border-radius: 4px; color: var(--color-ink-2); font-size: 1rem; text-decoration: none; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1), color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-rail-item .ds-icon { fill: var(--color-ink-3); } .ds-rail-item:hover { background: var(--color-ground); color: var(--color-ink); } .ds-rail-item[aria-current=page] { background: var(--color-brand-tint); color: var(--color-ink); font-weight: 600; } .ds-rail-item[aria-current=page] .ds-icon { fill: var(--color-brand); } .ds-rail-item:focus-visible { outline: 2px solid var(--color-brand-2); outline-offset: 2px; }"
+    },
+    {
+      "name": "Error Notice",
+      "kind": "custom",
+      "refersTo": "notice-error",
+      "description": "Inline feedback: tone stroke over its tint with a tone icon; error, info, success and caution share the shape.",
+      "html": "<div class=\"ds-notice\" role=\"alert\"><svg class=\"ds-icon\" viewBox=\"0 -960 960 960\" aria-hidden=\"true\" width=\"20\" height=\"20\"><path d=\"M480-280q17 0 28.5-11.5T520-320q0-17-11.5-28.5T480-360q-17 0-28.5 11.5T440-320q0 17 11.5 28.5T480-280Zm-40-160h80v-240h-80v240Zm40 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z\"/></svg><div>Sahayak could not reach the server. Start the backend, then try again.</div></div>",
+      "css": ".ds-notice { display: flex; align-items: flex-start; gap: 10px; max-width: 560px; padding: 10px 14px; border: 1px solid var(--color-attention); border-radius: 4px; background: var(--color-attention-tint); color: var(--color-attention); font-family: var(--font-sans); font-size: 0.875rem; line-height: 1.375rem; font-weight: 500; } .ds-notice .ds-icon { flex-shrink: 0; margin-top: 1px; fill: currentColor; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The School Progress Card",
+    "overview": "Sahayak is built to look like the register and report card a teacher already keeps. Pages sit on a cool card-stock ground; work happens on white sheets edged with hairline rules, with a blue-black ink rule under every header. Marks the teacher enters, and the averages computed from them, are written in fountain-pen blue. Anything below 33% is flagged in red ink and underlined. Every score is filed into one of the eight CBSE grade bands, weakest first. The only colour flourish is the green-to-teal masthead, which works like the school's letterhead.\n\nThis is an operating tool, not a showcase. Density is moderate and the type is deliberately large and plain for teachers with very different levels of digital confidence: 16px body, 44px controls, labels above every field. Numbers live in ruled tables, short sentences and the band strip. There are no big-number tiles, no illustrations and no decorative colour. Both type families carry Devanagari and Tamil siblings, so Hindi, Marathi and Tamil text sits in the same rhythm as English.\n\nDepth comes from white sheets on card stock, edged by rules, never from shadow. Motion is a single gesture: a sheet rising 12px into place. Four user rules from PRODUCT.md are binding on every surface: no emojis anywhere; exactly one brand gradient; no glassmorphism; and each page lives in its own folder under `src/pages/` so it can be iterated on its own.",
+    "keyCharacteristics": [
+      "Card-stock ground, opaque white sheets and 1px rules, with an ink rule under every header.",
+      "One gradient, used only on masthead bars and thin header bands.",
+      "Every score is shown as one of eight CBSE grade bands and sorted weakest first.",
+      "Colour carries meaning. Blue is an entered value or a link, red is below 33% or an error, and subject inks never change.",
+      "State is shown by a mark (check, filled radio, underline, filled icon) as well as by colour.",
+      "Square-shouldered corners: 4px on controls, 6px on sheets.",
+      "Flat sheets. Shadow appears only on things that leave the page: the modal, the menu, the printed-page preview."
+    ],
+    "rules": [
+      {
+        "name": "The One Gradient Rule",
+        "body": "Binding user rule. The brand has exactly one gradient: Register Green to Slate Teal, left to right, applied only through the masthead utility. It may appear on the app masthead, the public masthead and the mobile drawer header, and as the thin 6-8px band that caps the At a glance dialog, the login card and the landing excerpt. Never on buttons, text, sheets, page backgrounds or charts. Never add a second gradient.",
+        "section": "colors"
+      },
+      {
+        "name": "The Grade Band Rule",
+        "body": "Every score is shown as its CBSE band with the percentage beside it. There is no other score colour scale, and band colours are used for nothing but scores.",
+        "section": "colors"
+      },
+      {
+        "name": "The Meaningful Ink Rule",
+        "body": "Blue means \"a value you entered, or a link\". Red means \"below 33%, or something failed\". A subject's ink is the same on every screen. If a colour does not carry one of these meanings, the element stays ink, grey or white.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Families Rule",
+        "body": "Anek sets headings, the wordmark, column headers, band IDs and step numbers. Mukta sets everything else. A new face enters the system only if it ships Devanagari and Tamil glyphs.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Figures Rule",
+        "body": "Every mark, average, count and grade number uses tabular figures and sits right-aligned in its column, so a register can be scanned straight down.",
+        "section": "typography"
+      },
+      {
+        "name": "The Caps Are Column Heads Rule",
+        "body": "Small uppercase type is only for table column headers, definition terms and nav group labels. It never sits above a heading as a kicker.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Sheet Rule",
+        "body": "Sheets, tables, forms and nav never cast shadows. Anything that is part of the page is edged by a 1px rule.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Solid Scrim Rule",
+        "body": "Binding user rule. No glassmorphism: no backdrop blur, no translucent floating panels and no blur blobs. Overlays sit on a solid ink scrim, and every panel is opaque.",
+        "section": "elevation"
+      },
+      {
+        "name": "The One Hairline Rule",
+        "body": "Interface borders are 1px. To add emphasis, change the rule's colour to ink. Never make it thicker.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do put every page in its own folder under `src/pages/<page>/`, with its page-only parts beside it, and take shared parts from `src/components/ui/` and `src/components/layout/`. (Binding user rule.)",
+      "Do open every signed-in page with the page header: a Headline title, a Body description, actions on the right, and a 1px ink rule below.",
+      "Do build on the sheet: white, 6px corners, a 1px rule border, its title on an ink rule, and 20px padding.",
+      "Do show every score as a band chip beside its percentage, sorted weakest first. Write averages in Fountain-Pen Blue, and in Red Ink with a 2px underline below 33%.",
+      "Do show state with a mark as well as colour: a check on done steps and selected grade toggles, a filled radio in choice lists, an underline on red values, a filled icon on the active nav item.",
+      "Do use tabular figures, right-aligned, for every number column.",
+      "Do keep controls 44px tall (36px for small) with 4px corners and the 2px Slate Teal focus ring.",
+      "Do use Material Symbols Outlined at 16, 18, 20 or 24px. Use the filled style only for the active nav item and status marks.",
+      "Do label any demonstration data as sample data in a visible caption."
+    ],
+    "donts": [
+      "Don't use emojis anywhere: not in copy, labels, buttons, empty states or around generated content. (Binding user rule.)",
+      "Don't add a second gradient, or use the masthead gradient anywhere except masthead bars and the thin 6-8px bands that cap dialogs and cards. (Binding user rule.)",
+      "Don't use glassmorphism: no backdrop-filter or blur, no translucent floating panels, no blur blobs. Scrims are solid ink. (Binding user rule.)",
+      "Don't present numbers as big-number stat tiles, or float cards on shadows. Numbers belong in ruled tables, sentences and the band strip.",
+      "Don't invent another score colour scale, or use band colours for anything other than scores.",
+      "Don't use Red Ink or Fountain-Pen Blue decoratively.",
+      "Don't set Faded Pencil Grey text on the ground or the rail, where it falls below 4.5:1. Use Slate Secondary Ink there.",
+      "Don't set uppercase kickers or eyebrows above headings.",
+      "Don't thicken a border for emphasis. Change the 1px rule to ink instead.",
+      "Don't add motion beyond the 220ms sheet rise, 150ms colour transitions and the loading indicators. Every animation must collapse under reduced motion."
+    ]
+  }
+}

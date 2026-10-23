@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface": "#111c2d", "on-secondary-fixed-variant": "#653e00", "error": "#ba1a1a", "on-tertiary-fixed": "#002113", "surface-container": "#e7eeff", "surface-bright": "#f9f9ff", "on-primary-fixed": "#00201d", "surface-container-lowest": "#ffffff", "on-secondary": "#ffffff", "outline-variant": "#bdc9c6", "outline": "#6e7977", "surface-container-high": "#dee8ff", "surface-variant": "#d8e3fb", "on-surface-variant": "#3e4947", "primary-fixed-dim": "#80d5cb", "secondary-fixed": "#ffddb8", "secondary": "#855300", "on-background": "#111c2d", "on-primary-container": "#a3faef", "on-secondary-container": "#684000", "primary-fixed": "#9cf2e8", "background": "#f9f9ff", "tertiary": "#005e3f", "surface": "#f9f9ff", "error-container": "#ffdad6", "on-secondary-fixed": "#2a1700", "primary-container": "#0f766e", "inverse-primary": "#80d5cb", "surface-dim": "#cfdaf2", "on-tertiary-container": "#99ffcd", "secondary-container": "#fea619", "surface-container-highest": "#d8e3fb", "tertiary-fixed": "#6ffbbe", "inverse-surface": "#263143", "secondary-fixed-dim": "#ffb95f", "inverse-on-surface": "#ecf1ff", "on-error-container": "#93000a", "surface-tint": "#006a63", "on-tertiary": "#ffffff", "tertiary-fixed-dim": "#4edea3", "on-primary-fixed-variant": "#00504a", "surface-container-low": "#f0f3ff", "on-primary": "#ffffff", "on-error": "#ffffff", "on-tertiary-fixed-variant": "#005236", "primary": "#005c55", "tertiary-container": "#007952" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "2rem", "space-sm": "0.5rem", "margin": "1rem", "gutter-tablet": "1.5rem", "space-2xl": "3rem", "space-lg": "1.5rem", "gutter-desktop": "2rem", "gutter": "1rem", "space-xs": "0.25rem", "margin-tablet": "1.5rem", "space-md": "1rem", "margin-desktop": "2.5rem" }, "fontFamily": { "label-sm": [ "Inter" ], "display-lg-mobile": [ "Inter" ], "body-lg": [ "Inter" ], "headline-sm": [ "Inter" ], "label-lg": [ "Inter" ], "display-lg": [ "Inter" ], "body-md": [ "Inter" ], "label-md": [ "Inter" ], "body-sm": [ "Inter" ], "headline-lg": [ "Inter" ] }, "fontSize": { "label-sm": [ "0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.02em", "fontWeight": "600" } ], "display-lg-mobile": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.8rem", "fontWeight": "400" } ], "headline-sm": [ "1.25rem", { "lineHeight": "1.75rem", "fontWeight": "600" } ], "label-lg": [ "0.9375rem", { "lineHeight": "1.35rem", "fontWeight": "600" } ], "display-lg": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-md": [ "1rem", { "lineHeight": "1.6rem", "fontWeight": "400" } ], "label-md": [ "0.8125rem", { "lineHeight": "1.2rem", "letterSpacing": "0.01em", "fontWeight": "500" } ], "body-sm": [ "0.875rem", { "lineHeight": "1.45rem", "fontWeight": "400" } ], "headline-lg": [ "1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-60 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col pt-space-lg px-space-md"><div class="flex items-center gap-space-sm px-space-xs mb-space-lg"><img alt="ShikshaSathi Brand Mark" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UY13tYpQrLptMI-nbTrxcencSBDlaMrJTNpS0F67yaq6STxcWAaH5yMm4DRTUQP0ur689xQ_eipB8d4G5VUkTsoZAgYvsyalwu55nCgt9WbOcGvQiFxj4FhviD2E2jSq1f8pVzDeeJ_uKv_9nhhLLu3_p6Vk4LsdiR3C_IFjy8tBjDiN8DLbTit3uJd0vBEWSOn4p3NYKZN7FI1__mltLprIqkb8-rQbh9if8yU15_R85duKR30Debcg"/><div class="flex flex-col leading-tight"><span class="font-headline-sm text-headline-sm text-primary font-bold">ShikshaSathi</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">शिक्षक साथी</span></div></div><div class="mb-space-lg"><button class="w-full flex items-center justify-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary hover:text-on-primary-container py-space-sm px-space-md rounded-xl shadow-[0_1px_3px_0_rgba(28,25,23,0.05)] transition-colors min-h-[48px]" type="button"><span class="material-symbols-outlined text-base">add</span><span class="font-label-lg text-label-lg font-semibold">+ New Request</span></button></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors min-h-[48px]" data-path="home" href="#"><span class="material-symbols-outlined">home</span><span class="font-label-lg text-label-lg">Home</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors min-h-[48px]" data-path="library" href="#"><span class="material-symbols-outlined">local_library</span><span class="font-label-lg text-label-lg">Library</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-sm transition-colors min-h-[48px] bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="worksheets" href="#"><span class="material-symbols-outlined">assignment</span><span class="font-label-lg text-label-lg">Worksheets</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors min-h-[48px]" data-path="lesson-planner" href="#"><span class="material-symbols-outlined">event_note</span><span class="font-label-lg text-label-lg">Lesson Planner</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors min-h-[48px]" data-path="students" href="#"><span class="material-symbols-outlined">groups</span><span class="font-label-lg text-label-lg">Students</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors min-h-[48px]" data-path="analytics" href="#"><span class="material-symbols-outlined">insights</span><span class="font-label-lg text-label-lg">Analytics</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors min-h-[48px]" data-path="settings" href="#"><span class="material-symbols-outlined">settings</span><span class="font-label-lg text-label-lg">Settings</span></a></nav></div><div class="flex flex-col p-space-md gap-space-md bg-surface-container-low"><div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container-lowest text-tertiary shadow-[0_1px_2px_-1px_rgba(28,25,23,0.05)]"><span class="h-2 w-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface font-medium">Offline ready (2G sync)</span></div><div class="flex items-center justify-between bg-surface-container rounded-lg p-space-xs"><button class="px-space-xs py-space-xs rounded font-label-sm text-label-sm bg-primary text-on-primary font-semibold" type="button">EN</button><button class="px-space-xs py-space-xs rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface" type="button">हिन्दी</button><button class="px-space-xs py-space-xs rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface" type="button">தமிழ்</button><button class="px-space-xs py-space-xs rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface" type="button">తెలుగు</button></div><div class="flex items-center gap-space-sm p-space-sm rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_0_rgba(28,25,23,0.05)]"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiJQjkiJ4R9YL3eQOVO7nw55Tpf8ueja51t4ItKf0xhbgsTm0u1rRrqfZt5Lvaowu-ZmwEX_LZnGzSZyK6cHpJqasbHlzJPrIxFWzoz1eInY1wAXbSKo3eJQvmH_qT53csTUN7bIM76S2Pkv-D2BuzaDwANJwdNkcZDPkt0kB91b0A-KcV7tWVu53ZxZrtxregbF8L0B07FWiLcwyoe7emzXhgRoCNCfEzZbFDPxd1jFmbBfGwY5kH"/><div class="flex flex-col min-w-0 flex-1"><span class="font-label-md text-label-md text-on-surface font-semibold truncate">Sunita Sharma</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Govt. Upper Primary</span><span class="font-label-sm text-label-sm text-primary font-medium truncate">Classes 5-7</span></div></div></div></aside><div class="pl-60"><header class="fixed top-0 left-60 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-sm max-w-md w-full"><div class="flex items-center gap-space-xs w-full bg-surface-container-low px-space-sm py-space-xs rounded-full"><span class="material-symbols-outlined text-on-surface-variant text-base">search</span><input class="bg-transparent w-full outline-none font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant" placeholder="Search lessons, NCERT standards, or worksheets..." type="search"/></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container-high text-on-surface"><span class="material-symbols-outlined text-tertiary text-base">wifi</span><span class="font-label-sm text-label-sm">Connected</span></div><button aria-label="Notifications" class="p-space-xs rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors min-h-[48px] min-w-[48px] flex items-center justify-center" type="button"><span class="material-symbols-outlined">notifications</span></button><button aria-label="Theme Switcher" class="p-space-xs rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors min-h-[48px] min-w-[48px] flex items-center justify-center" type="button"><span class="material-symbols-outlined">light_mode</span></button><div class="flex items-center gap-space-xs pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiJQjkiJ4R9YL3eQOVO7nw55Tpf8ueja51t4ItKf0xhbgsTm0u1rRrqfZt5Lvaowu-ZmwEX_LZnGzSZyK6cHpJqasbHlzJPrIxFWzoz1eInY1wAXbSKo3eJQvmH_qT53csTUN7bIM76S2Pkv-D2BuzaDwANJwdNkcZDPkt0kB91b0A-KcV7tWVu53ZxZrtxregbF8L0B07FWiLcwyoe7emzXhgRoCNCfEzZbFDPxd1jFmbBfGwY5kH"/></div></div></header><main class="relative pt-16 bg-surface min-h-screen px-gutter-desktop py-space-lg"><div class="flex flex-col w-full pb-space-2xl">
+<!-- Top Context Header Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-lg bg-surface-container-low p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="hover:text-primary cursor-pointer transition-colors">Worksheets</span>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span class="text-primary font-semibold">New Differentiated Assessment</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">
+        Worksheet Builder: Multi-Grade Differentiation
+      </h1>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">school</span>
+          Class 5 (Foundational) &amp; Class 6 (Intermediate)
+        </span>
+<span class="text-outline-variant">•</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary/10 text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-sm">calculate</span>
+          Mathematics &amp; Science: NCERT Grade 5 &amp; 6 Aligned
+        </span>
+</div>
+</div>
+<!-- Quick Status Badge & Sync Mode -->
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-md py-space-sm rounded-lg shadow-sm">
+<div class="w-2.5 h-2.5 rounded-full bg-tertiary animate-pulse"></div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Low-Ink Optimization</span>
+<span class="font-label-sm text-label-sm text-tertiary">98% High Contrast Ready</span>
+</div>
+</div>
+<button class="flex items-center gap-2 bg-secondary-container text-on-secondary-fixed py-2.5 px-4 rounded-xl font-label-lg text-label-lg shadow-sm hover:brightness-95 transition-all" type="button">
+<span class="material-symbols-outlined text-lg">auto_awesome</span>
+<span>AI Co-Pilot Active</span>
+</button>
+</div>
+</div>
+<!-- Two-Pane Split Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT FORM CONFIGURATION PANEL (lg:col-span-5, sticky scroll) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md sticky top-20">
+<!-- Card 1: Cohort Selection & Syllabus Grounding -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Target Multigrade Cohorts</span>
+<span class="font-label-sm text-label-sm text-primary font-medium">Multi-grade Class 5+6 active</span>
+</div>
+<!-- Grade Multi-Select Chips -->
+<div class="flex items-center gap-space-sm">
+<button class="flex-1 min-h-[48px] flex items-center justify-center gap-2 px-4 py-2 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-sm" type="button">
+<span class="material-symbols-outlined text-sm">check_circle</span>
+            Class 5 (Primary)
+          </button>
+<button class="flex-1 min-h-[48px] flex items-center justify-center gap-2 px-4 py-2 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-sm" type="button">
+<span class="material-symbols-outlined text-sm">check_circle</span>
+            Class 6 (Upper)
+          </button>
+<button class="flex-1 min-h-[48px] flex items-center justify-center gap-2 px-4 py-2 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-lg text-label-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-sm">add</span>
+            Class 7
+          </button>
+</div>
+<!-- Subject & Topic Inputs -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Subject &amp; Theme Domain</label>
+<div class="relative">
+<div class="w-full bg-surface-container-low text-on-surface px-4 py-3 rounded-lg font-body-sm text-body-sm flex items-center justify-between cursor-pointer">
+<span>Mathematics - Fractions &amp; Everyday Decimals</span>
+<span class="material-symbols-outlined text-on-surface-variant text-base">expand_more</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Contextual Classroom Topic</label>
+<span class="font-label-sm text-label-sm text-tertiary bg-tertiary/10 px-2 py-0.5 rounded">Rural Context Bank</span>
+</div>
+<div class="w-full bg-surface-container-low px-4 py-3 rounded-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-base">storefront</span>
+<input class="bg-transparent w-full text-on-surface font-body-sm text-body-sm outline-none" type="text" value="Fractions through Village Weekly Markets (हाट बाज़ार)"/>
+</div>
+</div>
+<!-- Grade Differentiation Sliders / Descriptions -->
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-sm mt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-base">tune</span>
+            Cohort Difficulty Tuning
+          </span>
+<!-- Class 5 Config -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-bold">Class 5: Level 1 (Concrete &amp; Visual)</span>
+<span class="font-label-sm text-label-sm bg-primary/10 text-primary px-2 py-0.5 rounded-full">Foundational</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Concrete halves, thirds, and quarters using pictorial roti divisions, jaggery (गुड़) blocks, and sugarcane bundles.
+            </p>
+</div>
+<!-- Class 6 Config -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-secondary font-bold">Class 6: Level 2 (Relational &amp; Abstract)</span>
+<span class="font-label-sm text-label-sm bg-secondary/15 text-secondary px-2 py-0.5 rounded-full">Intermediate</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Equivalent fractions, mixed numbers, and decimal price-weights for grains (गेहूं / दाल) in local weekly markets.
+            </p>
+</div>
+</div>
+</div>
+<!-- Card 2: Question Type Matrix & Steppers -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Question Distribution Table</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Configure counts &amp; weightage</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">6 Formats</span>
+</div>
+<!-- Question Types List -->
+<div class="flex flex-col gap-space-xs">
+<!-- Row 1: MCQ -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-lg hover:bg-surface-container transition-colors">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">1. Multiple Choice (MCQ)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1 Mark each · Rapid warm-up</span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center bg-surface-container-lowest rounded-lg p-1 shadow-sm">
+<button class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container rounded font-bold" type="button">-</button>
+<span class="w-8 text-center font-label-md text-label-md font-bold text-on-surface">4</span>
+<button class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container rounded font-bold" type="button">+</button>
+</div>
+<span class="w-12 text-right font-label-md text-label-md font-bold text-primary">4 M</span>
+</div>
+</div>
+<!-- Row 2: True/False -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-lg hover:bg-surface-container transition-colors">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">2. True / False (सत्य / असत्य)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1 Mark each · Concept check</span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center bg-surface-container-lowest rounded-lg p-1 shadow-sm">
+<button class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container rounded font-bold" type="button">-</button>
+<span class="w-8 text-center font-label-md text-label-md font-bold text-on-surface">3</span>
+<button class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container rounded font-bold" type="button">+</button>
+</div>
+<span class="w-12 text-right font-label-md text-label-md font-bold text-primary">3 M</span>
+</div>
+</div>
+<!-- Row 3: Fill in Blanks -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-lg hover:bg-surface-container transition-colors">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">3. Fill in the Blanks (रिक्त स्थान)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2 Marks each · Calculation</span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center bg-surface-container-lowest rounded-lg p-1 shadow-sm">
+<button class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container rounded font-bold" type="button">-</button>
+<span class="w-8 text-center font-label-md text-label-md font-bold text-on-surface">3</span>
+<button class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container rounded font-bold" type="button">+</button>
+</div>
+<span class="w-12 text-right font-label-md text-label-md font-bold text-primary">6 M</span>
+</div>
+</div>
+<!-- Row 4: Match the Following -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-lg hover:bg-surface-container transition-colors">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">4. Match the Columns (मिलान करें)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3 Marks per set · Visual parity</span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center bg-surface-container-lowest rounded-lg p-1 shadow-sm">
+<button class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container rounded font-bold" type="button">-</button>
+<span class="w-8 text-center font-label-md text-label-md font-bold text-on-surface">1</span>
+<button class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container rounded font-bold" type="button">+</button>
+</div>
+<span class="w-12 text-right font-label-md text-label-md font-bold text-primary">3 M</span>
+</div>
+</div>
+<!-- Row 5: Short Answer -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-lg hover:bg-surface-container transition-colors">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">5. Short Answer (Real-life problem)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3 Marks each · Haat word story</span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center bg-surface-container-lowest rounded-lg p-1 shadow-sm">
+<button class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container rounded font-bold" type="button">-</button>
+<span class="w-8 text-center font-label-md text-label-md font-bold text-on-surface">3</span>
+<button class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container rounded font-bold" type="button">+</button>
+</div>
+<span class="w-12 text-right font-label-md text-label-md font-bold text-primary">9 M</span>
+</div>
+</div>
+<!-- Row 6: Diagram-based -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-lg hover:bg-surface-container transition-colors opacity-75">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">6. Diagram: Divide the Farm Plot</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">5 Marks each · Practical geometry</span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center bg-surface-container-lowest rounded-lg p-1 shadow-sm">
+<button class="w-8 h-8 flex items-center justify-center text-outline-variant rounded font-bold" type="button">-</button>
+<span class="w-8 text-center font-label-md text-label-md font-bold text-outline">0</span>
+<button class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container rounded font-bold" type="button">+</button>
+</div>
+<span class="w-12 text-right font-label-md text-label-md font-bold text-outline">0 M</span>
+</div>
+</div>
+</div>
+<!-- Live Total Marks Validator Card -->
+<div class="bg-surface-container-high/60 rounded-xl p-space-md flex flex-col gap-space-xs mt-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Live Total Marks Validator</span>
+</div>
+<span class="inline-flex items-center gap-1 text-tertiary font-label-sm text-label-sm bg-surface-container-lowest px-2.5 py-1 rounded-full shadow-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+              Marks match target!
+            </span>
+</div>
+<div class="flex items-baseline justify-between pt-1">
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-primary font-bold">25</span>
+<span class="font-label-md text-label-md text-on-surface-variant">/ 25 Target Marks</span>
+</div>
+<span class="font-label-sm text-label-sm font-mono text-on-surface-variant bg-surface-container-lowest px-2 py-1 rounded">
+              (4×1) + (3×1) + (3×2) + (1×3) + (3×3) = 25
+            </span>
+</div>
+<!-- Progress bar representation -->
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden mt-1">
+<div class="h-full bg-tertiary rounded-full transition-all duration-300" style="width: 100%;"></div>
+</div>
+</div>
+<!-- Action Row -->
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex-1 min-h-[48px] flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-lg text-label-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-base">refresh</span>
+<span>Regenerate Questions</span>
+</button>
+<button class="flex-1 min-h-[48px] flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-base">difference</span>
+<span>Auto-Differentiate</span>
+</button>
+</div>
+</div>
+</div>
+<!-- RIGHT PREVIEW PANEL (lg:col-span-7, Live A4 Worksheet Canvas) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Preview Header Controls & Export Bar -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<!-- Tabs -->
+<div class="flex items-center bg-surface-container-low p-1 rounded-xl">
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md font-bold shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">description</span>
+            Student Worksheet (Print Ready)
+          </button>
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-base">key</span>
+            Teacher Key &amp; Rubric
+          </button>
+</div>
+<!-- Download Buttons -->
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest font-label-md text-label-md transition-colors min-h-[44px]" type="button">
+<span class="material-symbols-outlined text-base">picture_as_pdf</span>
+<span>Download PDF (A4)</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest font-label-md text-label-md transition-colors min-h-[44px]" type="button">
+<span class="material-symbols-outlined text-base">article</span>
+<span>Word (.docx)</span>
+</button>
+</div>
+</div>
+<!-- A4 PAPER CANVAS PREVIEW CONTAINER -->
+<div class="relative bg-surface-dim p-space-lg rounded-2xl flex justify-center shadow-inner overflow-hidden">
+<!-- Low-ink Badge Overlay Indicator -->
+<div class="absolute top-4 left-6 flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface-variant font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-xs text-tertiary">print</span>
+          Standard 75 GSM Newsprint / Low-Toner Optimized
+        </div>
+<!-- Zoom Indicator -->
+<div class="absolute top-4 right-6 flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface-variant font-label-sm text-label-sm shadow-sm">
+<span>Scale: 100% (A4 Portrait)</span>
+</div>
+<!-- The Physical Paper Sheet (A4 Proportion: 210mm x 297mm styled in pure CSS, pure high contrast print-ready styling) -->
+<div class="w-full max-w-[760px] bg-white text-black p-8 sm:p-12 rounded-sm shadow-2xl flex flex-col gap-6 font-sans select-text">
+<!-- School Official Worksheet Header Box -->
+<div class="flex flex-col items-center text-center pb-4 bg-gray-50/80 p-4 rounded-lg">
+<div class="flex items-center justify-center gap-2 mb-1">
+<span class="material-symbols-outlined text-lg text-gray-800">account_balance</span>
+<span class="text-xs uppercase tracking-widest font-semibold text-gray-600">Govt. Upper Primary School · Rural Learning Initiative</span>
+</div>
+<h2 class="text-xl font-bold text-gray-900 tracking-tight">
+              Term 1 Assessment: Everyday Mathematics &amp; Fractions
+            </h2>
+<div class="text-xs text-gray-700 italic mt-0.5">
+              कक्षा 5 एवं 6 एकीकृत कार्यपत्रक (Multi-Grade Differentiated Worksheet)
+            </div>
+<!-- Metadata Form Filling Line -->
+<div class="w-full grid grid-cols-12 gap-2 mt-4 pt-3 text-xs text-gray-800 bg-white p-2 rounded">
+<div class="col-span-5 flex items-center">
+<span class="font-semibold mr-1">विद्यार्थी का नाम (Name):</span>
+<span class="flex-1 underline decoration-dotted">______________________</span>
+</div>
+<div class="col-span-2 flex items-center">
+<span class="font-semibold mr-1">अनुक्रमांक:</span>
+<span class="flex-1 underline decoration-dotted">______</span>
+</div>
+<div class="col-span-2 flex items-center">
+<span class="font-semibold mr-1">कक्षा:</span>
+<span class="font-bold px-1.5 py-0.5 bg-gray-100 rounded">5 / 6</span>
+</div>
+<div class="col-span-3 flex items-center">
+<span class="font-semibold mr-1">दिनांक:</span>
+<span class="flex-1 underline decoration-dotted">__________</span>
+</div>
+</div>
+<div class="w-full flex items-center justify-between text-[11px] text-gray-600 mt-2 px-1">
+<span>Time Allowed: 45 Minutes</span>
+<span class="font-bold text-gray-900">Total Marks: 25 पूर्णांक</span>
+<span>General Instructions: Solve all questions in your cohort section.</span>
+</div>
+</div>
+<!-- SECTION A: CLASS 5 (FOUNDATIONAL - CONCRETE FRACTIONS) -->
+<div class="flex flex-col gap-4">
+<!-- Section Header Banner -->
+<div class="flex items-center justify-between bg-teal-50 px-3 py-2 rounded text-teal-950">
+<div class="flex items-center gap-2">
+<span class="bg-teal-700 text-white font-bold text-xs px-2 py-0.5 rounded">खण्ड अ (Section A)</span>
+<span class="text-xs font-bold">Class 5: Concrete Fractions · मूर्त एवं सचित्र भिन्न</span>
+</div>
+<span class="text-xs font-semibold text-teal-800">[12 Marks]</span>
+</div>
+<!-- Question 1: Visual MCQ (Halves & Quarters of Roti) -->
+<div class="flex flex-col gap-2 pl-2">
+<div class="flex items-start justify-between">
+<div class="flex items-start gap-2">
+<span class="font-bold text-xs">प्र. 1.</span>
+<div class="flex flex-col text-xs text-gray-900 leading-relaxed">
+<p class="font-medium">
+                      Mother divided one big chapati equally among 4 children in the family. Which fraction shows each child's share?
+                    </p>
+<p class="text-gray-700">
+                      माँ ने एक बड़ी रोटी को 4 बच्चों में बराबर बाँटा। प्रत्येक बच्चे को रोटी का कौन सा भाग मिला?
+                    </p>
+</div>
+</div>
+<span class="text-[11px] font-bold text-gray-600 bg-gray-100 px-1.5 py-0.5 rounded ml-2 whitespace-nowrap">[1 Mark]</span>
+</div>
+<!-- Inline Diagram & Visual Choices -->
+<div class="grid grid-cols-4 gap-3 mt-1 pl-4">
+<div class="flex items-center gap-2 p-2 bg-gray-50 rounded">
+<input class="w-3.5 h-3.5 rounded text-teal-700" type="checkbox"/>
+<span class="text-xs font-semibold">(A) 1/2</span>
+</div>
+<div class="flex items-center gap-2 p-2 bg-gray-50 rounded">
+<input class="w-3.5 h-3.5 rounded text-teal-700" type="checkbox"/>
+<span class="text-xs font-semibold">(B) 1/4</span>
+</div>
+<div class="flex items-center gap-2 p-2 bg-gray-50 rounded">
+<input class="w-3.5 h-3.5 rounded text-teal-700" type="checkbox"/>
+<span class="text-xs font-semibold">(C) 3/4</span>
+</div>
+<div class="flex items-center gap-2 p-2 bg-gray-50 rounded">
+<input class="w-3.5 h-3.5 rounded text-teal-700" type="checkbox"/>
+<span class="text-xs font-semibold">(D) 2/3</span>
+</div>
+</div>
+</div>
+<!-- Question 2: Visual Sugarcane & Jaggery Shading Problem -->
+<div class="flex flex-col gap-2 pl-2 pt-2">
+<div class="flex items-start justify-between">
+<div class="flex items-start gap-2">
+<span class="font-bold text-xs">प्र. 2.</span>
+<div class="flex flex-col text-xs text-gray-900 leading-relaxed">
+<p class="font-medium">
+                      Observe the jaggery (गुड़) blocks below. Shade exactly <strong class="underline">3 out of 6 parts</strong> and write the equivalent fraction in the box.
+                    </p>
+<p class="text-gray-700">
+                      नीचे दिए गए गुड़ की पट्टी के 6 भागों में से 3 भागों को पेंसिल से छायांकित (shade) करें तथा समतुल्य भिन्न लिखें:
+                    </p>
+</div>
+</div>
+<span class="text-[11px] font-bold text-gray-600 bg-gray-100 px-1.5 py-0.5 rounded ml-2 whitespace-nowrap">[2 Marks]</span>
+</div>
+<!-- Hand-drawn style SVG Jaggery Grid Diagram -->
+<div class="flex items-center gap-6 pl-5 py-1">
+<div class="flex flex-col items-center">
+<svg class="text-gray-800" height="52" viewbox="0 0 220 52" width="220">
+<rect fill="#FBF9F5" height="48" rx="4" stroke="#333" stroke-width="2" width="216" x="2" y="2"></rect>
+<!-- 6 segmented blocks -->
+<line stroke="#333" stroke-dasharray="2 2" stroke-width="1.5" x1="38" x2="38" y1="2" y2="50"></line>
+<line stroke="#333" stroke-dasharray="2 2" stroke-width="1.5" x1="74" x2="74" y1="2" y2="50"></line>
+<line stroke="#333" stroke-dasharray="2 2" stroke-width="1.5" x1="110" x2="110" y1="2" y2="50"></line>
+<line stroke="#333" stroke-dasharray="2 2" stroke-width="1.5" x1="146" x2="146" y1="2" y2="50"></line>
+<line stroke="#333" stroke-dasharray="2 2" stroke-width="1.5" x1="182" x2="182" y1="2" y2="50"></line>
+<!-- Shading hatches on first two for illustration -->
+<path d="M 6 46 L 34 6 M 16 46 L 38 18" opacity="0.4" stroke="#0F766E" stroke-width="1.5"></path>
+</svg>
+<span class="text-[10px] text-gray-500 mt-1 italic">Total 6 Equal Slices (कुल 6 बराबर टुकड़े)</span>
+</div>
+<div class="flex items-center gap-2 bg-gray-50 px-4 py-2 rounded">
+<span class="text-xs font-semibold">उत्तर (Fraction):</span>
+<div class="flex flex-col items-center text-xs font-bold w-10">
+<span>____</span>
+<span class="h-0.5 w-6 bg-gray-900 my-0.5"></span>
+<span>____</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Question 3: Match the Following (Visual to Fraction Number) -->
+<div class="flex flex-col gap-2 pl-2 pt-2">
+<div class="flex items-start justify-between">
+<div class="flex items-start gap-2">
+<span class="font-bold text-xs">प्र. 3.</span>
+<div class="flex flex-col text-xs text-gray-900 leading-relaxed">
+<p class="font-medium">Match Column A with its correct Fraction value in Column B (मिलान कीजिए):</p>
+</div>
+</div>
+<span class="text-[11px] font-bold text-gray-600 bg-gray-100 px-1.5 py-0.5 rounded ml-2 whitespace-nowrap">[3 Marks]</span>
+</div>
+<div class="grid grid-cols-2 gap-8 pl-5 text-xs">
+<div class="flex flex-col gap-2">
+<span class="font-bold text-gray-700 underline">स्तम्भ अ (Column A)</span>
+<div class="flex items-center justify-between p-1 bg-gray-50 rounded">
+<span>(i) आधा (Half glass of milk)</span>
+<span class="font-mono text-gray-400">--- [   ]</span>
+</div>
+<div class="flex items-center justify-between p-1 bg-gray-50 rounded">
+<span>(ii) एक चौथाई (Quarter of a pumpkin)</span>
+<span class="font-mono text-gray-400">--- [   ]</span>
+</div>
+<div class="flex items-center justify-between p-1 bg-gray-50 rounded">
+<span>(iii) तीन चौथाई (Three-fourths basket)</span>
+<span class="font-mono text-gray-400">--- [   ]</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-bold text-gray-700 underline">स्तम्भ ब (Column B)</span>
+<div class="p-1 bg-gray-50 rounded font-semibold text-gray-800">(A) 3 / 4</div>
+<div class="p-1 bg-gray-50 rounded font-semibold text-gray-800">(B) 1 / 2</div>
+<div class="p-1 bg-gray-50 rounded font-semibold text-gray-800">(C) 1 / 4</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Contextual Divider -->
+<div class="w-full flex items-center justify-center my-1">
+<div class="h-0.5 flex-1 bg-gray-200"></div>
+<span class="px-3 text-[10px] text-gray-400 tracking-wider uppercase font-semibold">Tear or Continue for Higher Grade</span>
+<div class="h-0.5 flex-1 bg-gray-200"></div>
+</div>
+<!-- SECTION B: CLASS 6 (INTERMEDIATE - RELATIONAL & WORD PROBLEMS) -->
+<div class="flex flex-col gap-4">
+<!-- Section Header Banner -->
+<div class="flex items-center justify-between bg-amber-50 px-3 py-2 rounded text-amber-950">
+<div class="flex items-center gap-2">
+<span class="bg-amber-700 text-white font-bold text-xs px-2 py-0.5 rounded">खण्ड ब (Section B)</span>
+<span class="text-xs font-bold">Class 6: Relational Fractions &amp; Village Market Math</span>
+</div>
+<span class="text-xs font-semibold text-amber-800">[13 Marks]</span>
+</div>
+<!-- Question 4: Village Haat Word Problem (Step-by-Step) -->
+<div class="flex flex-col gap-2 pl-2">
+<div class="flex items-start justify-between">
+<div class="flex items-start gap-2">
+<span class="font-bold text-xs">प्र. 4.</span>
+<div class="flex flex-col text-xs text-gray-900 leading-relaxed">
+<p class="font-medium">
+                      Ramesh bought <strong class="font-bold">3 ½ kg</strong> of potatoes and <strong class="font-bold">1 ¼ kg</strong> of green chilies from the Tuesday weekly market (मंगलवार हाट बाज़ार).
+                    </p>
+<p class="text-gray-700">
+                      रमेश ने साप्ताहिक हाट से 3 ½ किग्रा आलू और 1 ¼ किग्रा हरी मिर्च खरीदी।
+                    </p>
+<ul class="list-disc pl-5 mt-1 space-y-1">
+<li>(a) What is the total weight of vegetables in his jute bag? Convert to an improper fraction (अनुचित भिन्न).</li>
+<li>(b) If potatoes cost ₹24 per kilogram, calculate the exact amount paid by Ramesh for potatoes.</li>
+</ul>
+</div>
+</div>
+<span class="text-[11px] font-bold text-gray-600 bg-gray-100 px-1.5 py-0.5 rounded ml-2 whitespace-nowrap">[3 Marks]</span>
+</div>
+<!-- Answer Working Box on Worksheet -->
+<div class="bg-gray-50/90 rounded p-3 ml-5 mt-1">
+<div class="flex items-center justify-between text-[11px] text-gray-500 mb-2">
+<span>हल हेतु स्थान (Space for step-by-step working):</span>
+<span>(Show rough calculation clearly)</span>
+</div>
+<div class="space-y-3 font-mono text-xs text-gray-400">
+<p>Step 1: Total Weight = 3 ½ + 1 ¼ = _____________________________________________</p>
+<p>Step 2: Improper Fraction = __________________________________________________</p>
+<p>Step 3: Cost = 3 ½ × 24 = ₹ ____________________________________________________</p>
+</div>
+</div>
+</div>
+<!-- Question 5: Grain Measurement Equivalent Comparison -->
+<div class="flex flex-col gap-2 pl-2 pt-2">
+<div class="flex items-start justify-between">
+<div class="flex items-start gap-2">
+<span class="font-bold text-xs">प्र. 5.</span>
+<div class="flex flex-col text-xs text-gray-900 leading-relaxed">
+<p class="font-medium">
+                      In the village granary (अनाज भण्डार), 5 out of 15 grain bags contain Wheat, while in another stack, 3 out of 9 bags contain Millet (बाजरा).
+                    </p>
+<p class="text-gray-700">
+                      क्या दोनों भण्डारों में अनाजों का अनुपात बराबर है? उचित चिन्ह (&lt;, &gt;, =) का प्रयोग करते हुए पुष्टि कीजिए।
+                    </p>
+</div>
+</div>
+<span class="text-[11px] font-bold text-gray-600 bg-gray-100 px-1.5 py-0.5 rounded ml-2 whitespace-nowrap">[3 Marks]</span>
+</div>
+<!-- Visual Fraction Box Comparison -->
+<div class="flex items-center justify-center gap-4 py-2 bg-gray-50 rounded ml-5">
+<div class="flex flex-col items-center">
+<span class="text-xs font-bold text-gray-800">5 / 15</span>
+<span class="text-[10px] text-gray-500">गेहूं (Wheat)</span>
+</div>
+<div class="w-10 h-10 rounded border-2 border-dashed border-gray-400 flex items-center justify-center font-bold text-sm text-gray-600">
+                  ?
+                </div>
+<div class="flex flex-col items-center">
+<span class="text-xs font-bold text-gray-800">3 / 9</span>
+<span class="text-[10px] text-gray-500">बाजरा (Millet)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Evaluation & Teacher Signature Strip -->
+<div class="mt-4 pt-4 bg-gray-50 rounded-lg p-3 text-xs text-gray-700 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-bold text-gray-900">मूल्यांकन सारांश (Teacher Evaluation):</span>
+<span class="text-[11px] text-gray-500">Section A Marks: ___/12  |  Section B Marks: ___/13</span>
+</div>
+<div class="flex items-center gap-6">
+<div class="flex flex-col items-center">
+<span class="text-[10px] text-gray-400 mb-4">हस्ताक्षर (Teacher Signature)</span>
+<span class="underline decoration-dotted text-gray-500">___________________</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Action Pill beneath preview -->
+<div class="flex items-center justify-between bg-surface-container-low p-space-md rounded-xl text-on-surface-variant font-label-md text-label-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">info</span>
+<span>Automatic watermark removal enabled for verified Government school logins.</span>
+</div>
+<button class="text-primary font-bold hover:underline" type="button">
+          Preview Answer Key (With Rubrics)
+        </button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

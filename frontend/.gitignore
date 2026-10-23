@@ -12,6 +12,14 @@ dist
 dist-ssr
 *.local
 
+# Design review scratch (screenshots, decision sketches, inspection server)
+.impeccable/review/
+.impeccable/mocks/
+.impeccable/preview/
+.impeccable/questions/
+.impeccable/build/
+.impeccable/config.local.json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

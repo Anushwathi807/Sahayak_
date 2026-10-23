@@ -159,6 +159,90 @@ def _butterfly(cx: float, cy: float) -> str:
     )
 
 
+def _frog(cx: float, cy: float) -> str:
+    return (
+        f'<path d="M{cx - 13:.1f},{cy + 9:.1f} Q{cx - 16:.1f},{cy + 2:.1f} {cx - 9:.1f},{cy + 2:.1f}" fill="none" {_STROKE}/>'
+        f'<path d="M{cx + 13:.1f},{cy + 9:.1f} Q{cx + 16:.1f},{cy + 2:.1f} {cx + 9:.1f},{cy + 2:.1f}" fill="none" {_STROKE}/>'
+        f'<ellipse cx="{cx:.1f}" cy="{cy + 3:.1f}" rx="11" ry="8" fill="#81C784" {_STROKE}/>'
+        f'<circle cx="{cx - 6:.1f}" cy="{cy - 6:.1f}" r="4" fill="#81C784" {_STROKE}/>'
+        f'<circle cx="{cx + 6:.1f}" cy="{cy - 6:.1f}" r="4" fill="#81C784" {_STROKE}/>'
+        f'<circle cx="{cx - 6:.1f}" cy="{cy - 6:.1f}" r="1.6" fill="#2b2b2b"/>'
+        f'<circle cx="{cx + 6:.1f}" cy="{cy - 6:.1f}" r="1.6" fill="#2b2b2b"/>'
+        f'<path d="M{cx - 4:.1f},{cy + 3:.1f} Q{cx:.1f},{cy + 6:.1f} {cx + 4:.1f},{cy + 3:.1f}" fill="none" {_STROKE}/>'
+    )
+
+
+def _tadpole(cx: float, cy: float) -> str:
+    return (
+        f'<path d="M{cx + 1:.1f},{cy:.1f} Q{cx + 6:.1f},{cy - 6:.1f} {cx + 10:.1f},{cy:.1f} '
+        f'T{cx + 16:.1f},{cy:.1f}" fill="none" stroke="#5D4037" stroke-width="2.2" stroke-linecap="round"/>'
+        f'<ellipse cx="{cx - 5:.1f}" cy="{cy:.1f}" rx="8" ry="6.5" fill="#6D4C41" {_STROKE}/>'
+        f'<circle cx="{cx - 8:.1f}" cy="{cy - 2:.1f}" r="1.5" fill="white"/>'
+    )
+
+
+def _fish(cx: float, cy: float) -> str:
+    return (
+        f'<path d="M{cx + 8:.1f},{cy:.1f} L{cx + 15:.1f},{cy - 7:.1f} L{cx + 15:.1f},{cy + 7:.1f} Z" fill="#FFB74D" {_STROKE}/>'
+        f'<ellipse cx="{cx - 2:.1f}" cy="{cy:.1f}" rx="11" ry="7" fill="#FFB74D" {_STROKE}/>'
+        f'<circle cx="{cx - 8:.1f}" cy="{cy - 2:.1f}" r="1.5" fill="#2b2b2b"/>'
+    )
+
+
+def _bird(cx: float, cy: float) -> str:
+    return (
+        f'<ellipse cx="{cx + 1:.1f}" cy="{cy + 3:.1f}" rx="10" ry="7" fill="#4FC3F7" {_STROKE}/>'
+        f'<circle cx="{cx - 8:.1f}" cy="{cy - 5:.1f}" r="5" fill="#4FC3F7" {_STROKE}/>'
+        f'<path d="M{cx - 13:.1f},{cy - 6:.1f} L{cx - 17:.1f},{cy - 4:.1f} L{cx - 13:.1f},{cy - 3:.1f} Z" fill="#FFA726" {_STROKE}/>'
+        f'<circle cx="{cx - 9:.1f}" cy="{cy - 6:.1f}" r="1.2" fill="#2b2b2b"/>'
+        f'<path d="M{cx - 2:.1f},{cy + 1:.1f} Q{cx + 5:.1f},{cy - 6:.1f} {cx + 10:.1f},{cy + 1:.1f}" fill="#0288D1" {_STROKE}/>'
+        f'<line x1="{cx - 1:.1f}" y1="{cy + 10:.1f}" x2="{cx - 2:.1f}" y2="{cy + 14:.1f}" {_STROKE}/>'
+        f'<line x1="{cx + 4:.1f}" y1="{cy + 10:.1f}" x2="{cx + 5:.1f}" y2="{cy + 14:.1f}" {_STROKE}/>'
+    )
+
+
+def _cocoon(cx: float, cy: float) -> str:
+    bands = "".join(
+        f'<path d="M{cx - 5:.1f},{cy - 3 + i * 5:.1f} Q{cx:.1f},{cy - 1 + i * 5:.1f} {cx + 5:.1f},{cy - 3 + i * 5:.1f}" '
+        f'fill="none" stroke="#6D4C41" stroke-width="1"/>'
+        for i in range(3)
+    )
+    return (
+        f'<line x1="{cx - 12:.1f}" y1="{cy - 13:.1f}" x2="{cx + 12:.1f}" y2="{cy - 13:.1f}" stroke="#795548" stroke-width="2.4" stroke-linecap="round"/>'
+        f'<line x1="{cx:.1f}" y1="{cy - 13:.1f}" x2="{cx:.1f}" y2="{cy - 9:.1f}" {_STROKE}/>'
+        f'<ellipse cx="{cx:.1f}" cy="{cy + 2:.1f}" rx="6.5" ry="11" fill="#BCAAA4" {_STROKE}/>'
+    ) + bands
+
+
+def _house(cx: float, cy: float) -> str:
+    return (
+        f'<rect x="{cx - 10:.1f}" y="{cy - 2:.1f}" width="20" height="14" fill="#FFE0B2" {_STROKE}/>'
+        f'<path d="M{cx - 14:.1f},{cy - 1:.1f} L{cx:.1f},{cy - 13:.1f} L{cx + 14:.1f},{cy - 1:.1f} Z" fill="#E57373" {_STROKE}/>'
+        f'<rect x="{cx - 3:.1f}" y="{cy + 4:.1f}" width="6" height="8" fill="#8D6E63" {_STROKE}/>'
+    )
+
+
+def _person(cx: float, cy: float) -> str:
+    return (
+        f'<circle cx="{cx:.1f}" cy="{cy - 8:.1f}" r="5" fill="#FFCC80" {_STROKE}/>'
+        f'<path d="M{cx - 8:.1f},{cy + 13:.1f} L{cx - 7:.1f},{cy + 1:.1f} Q{cx:.1f},{cy - 3:.1f} {cx + 7:.1f},{cy + 1:.1f} '
+        f'L{cx + 8:.1f},{cy + 13:.1f} Z" fill="#7986CB" {_STROKE}/>'
+    )
+
+
+def _crop(cx: float, cy: float) -> str:
+    grains = "".join(
+        f'<ellipse cx="{cx + side * 3.5:.1f}" cy="{cy - 10 + i * 5:.1f}" rx="2.4" ry="3.6" '
+        f'transform="rotate({side * 25} {cx + side * 3.5:.1f} {cy - 10 + i * 5:.1f})" fill="#FBC02D" {_STROKE}/>'
+        for i in range(4)
+        for side in (-1, 1)
+    )
+    return (
+        f'<line x1="{cx:.1f}" y1="{cy - 14:.1f}" x2="{cx:.1f}" y2="{cy + 14:.1f}" stroke="#7CB342" stroke-width="2" stroke-linecap="round"/>'
+        f'<path d="M{cx:.1f},{cy + 10:.1f} Q{cx - 9:.1f},{cy + 6:.1f} {cx - 11:.1f},{cy - 1:.1f}" fill="none" stroke="#7CB342" stroke-width="1.8" stroke-linecap="round"/>'
+    ) + grains
+
+
 ICONS: dict[str, Callable[[float, float], str]] = {
     "sun": _sun,
     "cloud": _cloud,
@@ -178,6 +262,14 @@ ICONS: dict[str, Callable[[float, float], str]] = {
     "book": _book,
     "caterpillar": _caterpillar,
     "butterfly": _butterfly,
+    "frog": _frog,
+    "tadpole": _tadpole,
+    "fish": _fish,
+    "bird": _bird,
+    "cocoon": _cocoon,
+    "house": _house,
+    "person": _person,
+    "crop": _crop,
 }
 
 ICON_KEYS = list(ICONS.keys()) + ["none"]

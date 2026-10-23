@@ -1,1 +1,187 @@
 @import "tailwindcss";
+
+/* Sahayak: the School Progress Card world. Fonts load from index.html.
+   static: band and subject inks are read through var() built at runtime, so every token must ship. */
+@theme static {
+  --font-sans: "Mukta", "Mukta Malar", "Noto Sans", system-ui, sans-serif;
+  --font-display: "Anek Latin", "Anek Devanagari", "Anek Tamil", "Mukta", "Mukta Malar", sans-serif;
+
+  --text-xs: 0.8125rem;
+  --text-xs--line-height: 1.25rem;
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 1.375rem;
+  --text-base: 1rem;
+  --text-base--line-height: 1.625rem;
+  --text-lg: 1.125rem;
+  --text-lg--line-height: 1.625rem;
+  --text-xl: 1.3125rem;
+  --text-xl--line-height: 1.75rem;
+  --text-2xl: 1.5625rem;
+  --text-2xl--line-height: 2rem;
+  --text-3xl: 1.875rem;
+  --text-3xl--line-height: 2.25rem;
+  --text-4xl: 2.375rem;
+  --text-4xl--line-height: 2.75rem;
+  --text-5xl: 3.25rem;
+  --text-5xl--line-height: 3.5rem;
+
+  /* Paper and ink */
+  --color-ground: #f4f6f2;
+  --color-sheet: #ffffff;
+  --color-rail: #fafbf8;
+  --color-ink: #17233a;
+  --color-ink-2: #4f5b6b;
+  --color-ink-3: #5f6a78;
+  --color-rule: #c9d0cc;
+  --color-field: #858f8a;
+  --color-tray: #e4e8e3;
+
+  /* The one brand pair; the gradient between them is .bg-masthead */
+  --color-brand: #0f5a47;
+  --color-brand-deep: #0b4a3a;
+  --color-brand-2: #16637f;
+  --color-brand-tint: #e3eee8;
+  --color-on-brand-muted: #d7eae4;
+
+  /* Entries and states */
+  --color-entry: #2350a8;
+  --color-attention: #b3312a;
+  --color-attention-tint: #f8e4e1;
+  --color-caution: #7a4f00;
+  --color-caution-tint: #fdf1d8;
+  --color-success: #1e6b45;
+  --color-success-tint: #e2f0e7;
+
+  /* CBSE eight-point grade bands */
+  --color-band-a1: #135a3a;
+  --color-band-a2: #2a7f4c;
+  --color-band-b1: #7faf3e;
+  --color-band-b2: #c9b23c;
+  --color-band-c1: #e7a93a;
+  --color-band-c2: #e58a3e;
+  --color-band-d: #b8432a;
+  --color-band-e: #8e2620;
+
+  /* Fixed subject inks */
+  --color-subject-1: #2b5fae;
+  --color-subject-2: #7a3d9c;
+  --color-subject-3: #a55a16;
+  --color-subject-4: #2e7d4f;
+  --color-subject-5: #b0304e;
+  --color-subject-6: #0e7383;
+  --color-subject-7: #6b4f2a;
+  --color-subject-8: #4a5a7a;
+}
+
+@utility bg-masthead {
+  background-image: linear-gradient(90deg, #0f5a47 0%, #16637f 100%);
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    background: var(--color-ground);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    caret-color: var(--color-brand);
+    scrollbar-color: #a8b2ad transparent;
+  }
+  ::selection {
+    background: #cfe3da;
+    color: var(--color-ink);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-brand-2);
+    outline-offset: 2px;
+  }
+  a {
+    text-underline-offset: 3px;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    color: var(--color-ink-3);
+  }
+  select option {
+    color: var(--color-ink);
+    background: #fff;
+  }
+  dialog::backdrop {
+    background: rgb(23 35 58 / 0.55);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  user-select: none;
+}
+.material-symbols-outlined.filled {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+/* The one authored motion: a sheet rising into place. */
+@keyframes sheet-rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.sheet-rise {
+  animation: sheet-rise 220ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes skeleton-pulse {
+  50% {
+    opacity: 0.55;
+  }
+}
+.skeleton {
+  background: var(--color-tray);
+  border-radius: 4px;
+  animation: skeleton-pulse 1.4s ease-in-out infinite;
+}
+
+/* Rendered diagrams from the backend scale to their container. */
+.diagram-frame svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+}

@@ -6,6 +6,8 @@ of educational content (as a photo, scanned PDF, Word document, or spreadsheet).
 - The school subject it covers
 - The key concepts/topics taught on this page, as short phrases
 - A short plain-English summary of what the page teaches
+- A faithful transcription of the page's main text (full_text) - preserve the original wording,
+  do not summarize or paraphrase this field
 
 If the content is unclear or doesn't look like educational material, do your best to describe
 what you can see."""
@@ -33,8 +35,11 @@ def read_textbook_text(extracted_text: str) -> TextbookPageResult:
     if not extracted_text.strip():
         raise ValueError("No readable text found in this file.")
 
-    return generate_structured(
+    result = generate_structured(
         contents=f"Here is the extracted text from the file:\n\n{extracted_text}",
         system_instruction=_SYSTEM_INSTRUCTION,
         schema=TextbookPageResult,
     )
+    # The real extracted text is more faithful than anything Gemini could reproduce from it.
+    result.full_text = extracted_text
+    return result

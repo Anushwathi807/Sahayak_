@@ -1,5 +1,6 @@
 from app.diagrams import render_cycle_diagram
 from app.gemini_client import generate_structured
+from app.readability import is_appropriate
 from app.schemas import (
     GradeWorksheet,
     Language,
@@ -67,6 +68,7 @@ _TYPE_INSTRUCTIONS = {
 
 
 def _draft_is_valid(draft: WorksheetQuestionDraft, qtype: QuestionType, language: Language) -> bool:
+    """Hard requirements: must pass regardless of grade. Never skipped, even as a fallback."""
     if not is_text_valid(draft.question, language):
         return False
     if not is_text_valid(draft.answer, language):
@@ -110,9 +112,13 @@ def _generate_bucket(
 ) -> list[WorksheetQuestion]:
     system_instruction = _BASE_INSTRUCTION + _TYPE_INSTRUCTIONS[spec_item.type]
 
-    collected: list[WorksheetQuestionDraft] = []
+    # Readability is a soft preference: we always prefer simple-enough drafts, but if every
+    # attempt comes back slightly too complex for the grade (e.g. long_answer at grade 1),
+    # we fall back to the best structurally-valid drafts rather than returning nothing.
+    readable: list[WorksheetQuestionDraft] = []
+    fallback: list[WorksheetQuestionDraft] = []
     for _ in range(_MAX_BUCKET_ATTEMPTS):
-        remaining = spec_item.count - len(collected)
+        remaining = spec_item.count - len(readable)
         if remaining <= 0:
             break
 
@@ -129,10 +135,18 @@ def _generate_bucket(
             system_instruction=system_instruction,
             schema=QuestionDraftBatch,
         )
-        collected.extend(d for d in batch.questions if _draft_is_valid(d, spec_item.type, language))
+        for d in batch.questions:
+            if not _draft_is_valid(d, spec_item.type, language):
+                continue
+            if is_appropriate(d.question, grade):
+                readable.append(d)
+            else:
+                fallback.append(d)
+
+    collected = (readable + fallback)[: spec_item.count]
 
     questions = []
-    for draft in collected[: spec_item.count]:
+    for draft in collected:
         data = draft.model_dump()
         if spec_item.type == QuestionType.DIAGRAM_BASED:
             stage_tuples = [(s.label, s.icon) for s in draft.diagram_stages]
